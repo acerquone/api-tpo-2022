@@ -1,18 +1,28 @@
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
+import { Box } from '@mui/material';
 
 export function About() {
     return (
       <>
         <main>
-          <h2>Who are we?</h2>
+          <h2>Descripción</h2>
           <p>
-            That feels like an existential question, don't you
-            think?
+            Descripción de la aplicación
           </p>
         </main>
         <nav>
-          <Link to="/">Home</Link>
+        <Box
+            sx={{
+            typography: 'body1',
+            '& > :not(style) + :not(style)': {
+            ml: 2,
+            },
+            }}
+            >
+              <Link to="/">Home</Link>
+              <Link to="/login">Login</Link>
+            </Box>
         </nav>
       </>
     );

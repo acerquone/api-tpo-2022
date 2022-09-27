@@ -1,15 +1,26 @@
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
+import { Box } from '@mui/material';
 
 export function Home() {
     return (
       <>
         <main>
           <h2>Welcome to the homepage!</h2>
-          <p>You can do this, I believe in you.</p>
+          <p>Primera pagina</p>
         </main>
         <nav>
-          <Link to="/about">About</Link>
+          <Box
+            sx={{
+            typography: 'body1',
+            '& > :not(style) + :not(style)': {
+            ml: 2,
+            },
+            }}
+            >
+              <Link to="/login">Login</Link>
+              <Link to="/about">About</Link>
+            </Box> 
         </nav>
       </>
     );
