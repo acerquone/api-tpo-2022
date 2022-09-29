@@ -8,7 +8,7 @@ export function Login(){
         <main>
             <TextFieldBox></TextFieldBox>
             <Button variant="contained">
-                <Link to="/clasesprof">Ingresar</Link>
+                <Link to="/listaclasesprofe">Ingresar</Link>
             </Button>
         </main>
     );

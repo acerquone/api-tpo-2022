@@ -4,7 +4,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { Login } from "./pages/login";
-import { ClasesProf } from "./pages/clasesprof"
+import { ListaClasesProfe } from "./pages/listaclasesprofe"
+import { ClaseProf } from "./pages/claseprof";
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login/>} />
-        <Route path="clasesprof" element={<ClasesProf/>} />
+        <Route path="listaclasesprofe" element={<ListaClasesProfe/>} />
+        <Route path="claseprof" element={<ClaseProf/>} />
       </Routes>
     </div>
   );
