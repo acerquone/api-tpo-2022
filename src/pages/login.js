@@ -6,10 +6,10 @@ import { TextFieldBox } from '../components/textfieldbox';
 export function Login(){
     return (
         <main>
+            <h2>Inicio de Sesión</h2>
+            <p>Primera pagina</p>
             <TextFieldBox></TextFieldBox>
-            <Button variant="contained">
-                <Link to="/listaclasesprofe">Ingresar</Link>
-            </Button>
+            <Button variant="contained" href="/listaclasesprofe">Ingresar</Button>
         </main>
     );
 }

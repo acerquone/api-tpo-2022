@@ -19,6 +19,7 @@ export function Home() {
             }}
             >
               <Link to="/login">Login</Link>
+              <Link to="/listaclasesalumno">Lista de clases Alumno</Link>
               <Link to="/about">About</Link>
             </Box> 
         </nav>

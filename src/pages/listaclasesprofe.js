@@ -8,9 +8,11 @@ export function ListaClasesProfe() {
     return (
     <>
         <main>
+            <h2>Lista de clases</h2>
+            <p>Profesor</p>
             <TablaProfesor></TablaProfesor>
             <ButtonGroup variant="contained" aria-label="outlined primary button group">
-                <Button><Link to="/claseprof">Crear</Link></Button>
+                <Button href="/claseprof">Crear</Button>
                 <Button>Modificar</Button>
                 <Button>Publicar</Button>
                 <Button>Eliminar</Button>

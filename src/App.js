@@ -6,6 +6,7 @@ import { About } from "./pages/about";
 import { Login } from "./pages/login";
 import { ListaClasesProfe } from "./pages/listaclasesprofe"
 import { ClaseProf } from "./pages/claseprof";
+import { ListaClasesAlumno } from "./pages/listaclasesalumno";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="login" element={<Login/>} />
         <Route path="listaclasesprofe" element={<ListaClasesProfe/>} />
         <Route path="claseprof" element={<ClaseProf/>} />
+        <Route path="listaclasesalumno" element={<ListaClasesAlumno/>} />
       </Routes>
     </div>
   );

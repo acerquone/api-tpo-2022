@@ -1,19 +1,23 @@
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
-import TablaProfesor from '../components/tablaprofesor';
+import TablaAlumnos from '../components/tablalumnos';
 import { Box } from '@mui/system';
 import { ButtonGroup, Button } from '@mui/material';
+import { TextFieldBusqueda } from '../components/textfieldbusqueda';
 
-export function ClasesProf() {
+export function ListaClasesAlumno() {
     return (
     <>
         <main>
-            <TablaProfesor></TablaProfesor>
+            <h2>Lista de clases</h2>
+            <p>Alumno</p>
+            <TextFieldBusqueda></TextFieldBusqueda>
             <ButtonGroup variant="contained" aria-label="outlined primary button group">
-                <Button>Crear</Button>
-                <Button>Modificar</Button>
-                <Button>Publicar</Button>
-                <Button>Eliminar</Button>
+                <Button>Buscar</Button>
+            </ButtonGroup>
+            <TablaAlumnos></TablaAlumnos>
+            <ButtonGroup variant="contained" aria-label="outlined primary button group">
+                <Button>Ver detalles</Button>
             </ButtonGroup>
         </main>
         <nav>
